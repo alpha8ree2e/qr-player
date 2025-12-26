@@ -1,0 +1,15 @@
+/* 让页面真正以浏览器视口为基准 */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/* 取消 Vite 模板默认给 #root 的 max-width / padding 等限制 */
+#root {
+  display: flex;
+  justify-content: center; /* 水平居中 App */
+  align-items: flex-start; /* 顶部对齐（如果你想垂直居中，改成 center） */
+}
